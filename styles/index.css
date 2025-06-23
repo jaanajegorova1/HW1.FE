@@ -1,0 +1,33 @@
+@import url(header/header.css);
+@import url(burger/burger.css);
+@import url(hero-form/hero-form.css);
+@import url(hero/hero.css);
+@import url(statistics/statistics.css);
+@import url(gallery/gallery.css);
+@import url(download-now/download-now.css);
+@import url(faq/faq.css);
+@import url(contact/contact.css);
+@import url(footer/footer.css);
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+@media screen and (min-width: 576px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+.three-first-sections {
+    background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,55 @@
+.statistics {
+    background: #0578FF;
+}
+.statistics-container.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35.5px;
+    padding-bottom: 35.5px;
+}
+@media screen and (min-width: 576px) {
+    .statistics-container.container {
+        width: 520px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .statistics-container.container {
+        width: 1312px;
+        margin: auto;
+    }
+}
+.statistics .cell {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 576px) {
+    .statistics .cell {
+        margin-bottom: 64px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .statistics .cell {
+        width: 25%;
+        margin-bottom: 60px;
+    }
+}
+.statistics .cell h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.statistics .cell p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}/*# sourceMappingURL=statistics.css.map */
+@media screen and (min-width: 576px) {
+    .statistics .cell p {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,72 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container.container {
+    padding: 32.5px 20px;
+}
+.header__burger-button {
+    background: none;
+    border: 0;
+}/*# sourceMappingURL=header.css.map */
+.brand-name {
+    display: none;
+}
+.navigavion__list {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__logo-and-logo-text {
+        width: 295px;
+        height: 51px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .header .brand-name {
+        display: block;
+    }
+    .header__burger-button {
+        background: none;
+        border: 0;
+    }/*# sourceMappingURL=header.css.map */
+    .header .logo-text {
+        /*width: 152px;*/
+        /*height: 51px;*/
+        font-size: 34px;
+        /*padding: 15px 16px;*/
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    .navigavion__list {
+        display: flex;
+        flex-direction: row;
+        height: 32px;
+        justify-content: center;
+        gap: 97px;
+    }
+
+    .header__burger-button {
+        display: none;
+    }
+    .header .brand-name {
+        display: block;
+    }
+    .header__links li {
+        list-style-type: none;
+    }
+    .navigavion__list a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .navigation__link-signup {
+        font-weight: 600;
+    }
+    .header .logo-text {
+        font-size: 34px;
+    }
+}
