@@ -155,25 +155,6 @@
         padding-top: 0;
         padding-right: 0;
     }
-
-    .footer-wrapper {
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 4rem 0 182px 0;
-            position: relative;
-
-            .hero-image {
-                display: flex;
-                justify-content: center;
-                margin-top: 79px;
-                margin-right: 50px;
-                width: 640px;
-                height: 704px;
-                flex: 1;
-            }
-        }
-    }
    .footer__container-logo-and-brand, .footer-links {
        display: flex;
        flex-direction: row;

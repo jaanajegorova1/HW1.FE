@@ -86,23 +86,23 @@
     padding-left: 52px;
 }/*# sourceMappingURL=hero-form.css.map */
 
-.hero-form .autocomplete-list {
-    position: absolute;
-    background: white;
-    max-height: 150px;
-    overflow-y: auto;
-    z-index: 1000;
-    width: 100%;
-}
+/*.hero-form .autocomplete-list {*/
+/*    position: absolute;*/
+/*    background: white;*/
+/*    max-height: 150px;*/
+/*    overflow-y: auto;*/
+/*    z-index: 1000;*/
+/*    width: 100%;*/
+/*}*/
 
-.hero-form .autocomplete-list div {
-    padding: 8px;
-    cursor: pointer;
-}
+/*.hero-form .autocomplete-list div {*/
+/*    padding: 8px;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.hero-form .autocomplete-list div:hover {
-    background-color: #eee;
-}
+/*.hero-form .autocomplete-list div:hover {*/
+/*    background-color: #eee;*/
+/*}*/
 @media screen and (min-width: 768px) {
     .hero-form {
         max-width: 640px;

@@ -41,11 +41,20 @@
     .contact-wrapper {
         width: 464px;
         height: 397px;
+        z-index: 2;
+        margin-top: -97px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        border: 1px solid gray;
+        border-radius: 10px;
     }
     .contact-card {
+        margin: 60px 20px;
+        padding-top: 16px;
+        align-content: center;
+        margin-inline: auto;
         height: 297px;
-        margin: auto;
-        top: -195px;
     }
     .contact-card h2 {
         font-size: 64px;
