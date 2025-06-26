@@ -1,5 +1,5 @@
 .hero-form {
-    max-width: 640px;
+    max-width: 320px;
 }
 .hero-form__label {
     display: block;
@@ -10,7 +10,6 @@
 .hero-form__input {
     width: 100%;
     display: block;
-    /*display: inline-flex;*/
     height: 53px;
     border-radius: 10px;
     padding: 16px 24px;
@@ -90,7 +89,6 @@
 .hero-form .autocomplete-list {
     position: absolute;
     background: white;
-   /* border: 1px solid #ccc;*/
     max-height: 150px;
     overflow-y: auto;
     z-index: 1000;
@@ -106,24 +104,38 @@
     background-color: #eee;
 }
 @media screen and (min-width: 768px) {
-    /*.hero .hero-form .calendar-input-wrapper {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 1fr;*/
-    /*    justify-content: space-between;*/
-    /*}*/
-}
-@media screen and (min-width: 1440px){
-    .hero .hero-form {
-        width: 640px;
+    .hero-form {
+        max-width: 640px;
     }
-    /*#departure-from, #departure-to {*/
-    /*    display: inline-grid;*/
-    /*    grid-row: 1;*/
-    /*    justify-content: space-between;*/
-    /*}*/
-    /*#departure-date-from, #departure-date-to {*/
-    /*    display: inline-grid;*/
-    /*    grid-row: 1;*/
-    /*    justify-content: space-between;*/
-    /*}*/
+    .hero-form_departure-arrival, .hero-form_date-from-to {
+        display: flex;
+        gap: 32px;
+    }
+    .hero-form_departure-arrival .departure, .hero-form_departure-arrival .arrival, .hero-form_date-from-to .calendar-input-from, .hero-form_date-from-to .calendar-input-to {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .calendar-input-wrapper::before {
+        top: 33.5px;
+    }
+}
+@media screen and (min-width: 993px){
+    .hero .hero-form {
+        max-width: 640px;
+    }
+    .hero-form_departure-arrival, .hero-form_date-from-to {
+        display: flex;
+        gap: 32px;
+    }
+    .hero-form_departure-arrival .departure, .hero-form_departure-arrival .arrival, .hero-form_date-from-to .calendar-input-from, .hero-form_date-from-to .calendar-input-to {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .calendar-input-wrapper::before {
+        top: 33.5px;
+    }
 }

@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
+
+<!-- Background color for first three sections -->
 <div class="three-first-sections">
+
+    <!-- Header section -->
     <header class="header">
         <div class="header__container container">
+
+            <!-- Header logo image and brand name -->
             <div class="header__logo-and-logo-text">
                 <div class="logo-image">
                     <img src="img/logo.svg" alt="logo" />
@@ -25,6 +31,7 @@
                 </div>
             </div>
 
+            <!-- Header links for desktop version -->
             <nav class="navigavion__list">
                 <a href="#mobile-app" class="navigation__link-mobile">Mobile App</a>
                 <a href="#faq" class="navigation__link-faq">FAQs</a>
@@ -32,12 +39,14 @@
                 <a href="#sign-up" class="navigation__link-signup">Sign Up</a>
             </nav>
 
+            <!--Button for burger menu, for mobile version and tablet-->
                 <button id="burger-opener" class="header__burger-button">
                     <img id="burger-icon" src="img/burger-open.png" />
                 </button>
         </div>
     </header>
 
+    <!--Burger menu button navigates to side pop-up window. Sub-menu with links-->
     <div id="burger" class="burger burger__closed">
         <div class="container burger__container">
             <nav>
@@ -51,6 +60,7 @@
         </div>
     </div>
 
+    <!-- Hero section -->
     <section class="hero">
         <div class="form">
             <h1>Skip the Climbing,<br>Catch the Bus</h1>
@@ -60,6 +70,7 @@
                 that is! Get ready for jaw-dropping views without breaking a sweat.
             </p>
 
+            <!--Hero-form-->
             <form class="hero-form">
                 <div class="trip-type">
                     <div class="radio-wrapper">
@@ -90,56 +101,68 @@
                         <button id="trip-plus">+</button>
                     </div>
                 </div>
-                <div>
-                <label for="departure-from" class="hero-form__label">Departure</label>
-                <input
-                        id="departure-from"
-                        class="hero-form__input"
-                        placeholder="Your City/Station"
-                        autocomplete="off"
-                />
-                <div class="autocomplete-list" id="departure-list"></div>
 
-                <label for="departure-to" class="hero-form__label">Arrival</label>
-                <input
-                        id="departure-to"
-                        class="hero-form__input"
-                        placeholder="Where to?"
-                        autocomplete="off"
-                />
-                <div class="autocomplete-list" id="arrival-list"></div>
+                <div class="hero-form_departure-arrival">
+                    <div class="departure">
+                        <label for="departure-from" class="hero-form__label">Departure</label>
+                        <input
+                                id="departure-from"
+                                class="hero-form__input"
+                                placeholder="Your City/Station"
+                                autocomplete="off"
+                        />
+                        <div class="autocomplete-list" id="departure-list"></div>
+                    </div>
+                    <div class="arrival">
+                        <label for="departure-to" class="hero-form__label">Arrival</label>
+                        <input
+                                id="departure-to"
+                                class="hero-form__input"
+                                placeholder="Where to?"
+                                autocomplete="off"
+                        />
+                        <div class="autocomplete-list" id="arrival-list"></div>
+                    </div>
                 </div>
 
-                <label for="departure-date-from" class="hero-form__label"
-                >Pick your lucky day</label
-                >
 
-                <div class="calendar-input-wrapper">
-                    <input
-                            id="departure-date-from"
-                            type="date"
-                            class="hero-form__input"
-                            placeholder="Depart"
-                    />
+                <label for="departure-date-from" class="hero-form__label">Pick your lucky day</label>
+
+                <div class="hero-form_date-from-to">
+                    <div class="calendar-input-from">
+                        <div class="calendar-input-wrapper">
+                            <input
+                                    id="departure-date-from"
+                                    type="date"
+                                    class="hero-form__input"
+                                    placeholder="Depart"
+                            />
+                        </div>
+                    </div>
+                    <div class="calendar-input-to">
+                        <div class="calendar-input-wrapper">
+                            <input
+                                    id="departure-date-to"
+                                    type="date"
+                                    class="hero-form__input"
+                                    placeholder="Return"
+                            />
+                        </div>
+                    </div>
                 </div>
 
-                <div class="calendar-input-wrapper">
-                    <input
-                            id="departure-date-to"
-                            type="date"
-                            class="hero-form__input"
-                            placeholder="Return"
-                    />
-                </div>
 
                 <button class="submit">Find My Alpine Ride</button>
             </form>
         </div>
+
+        <!--Hero-image only for desktop version-->
         <div class="hero-image">
             <img src="img/Hero.png" alt="hero-image">
         </div>
     </section>
 
+    <!--Statistics section-->
     <section class="statistics">
         <div class="container statistics-container">
             <div class="cell">
@@ -163,8 +186,8 @@
             </div>
         </div>
     </section>
-</div>
 
+    <!--Gallery section. 5 images-->
     <section class="gallery">
         <div class="container">
             <h2>Glimpses of Glory</h2>
@@ -188,30 +211,42 @@
             </div>
         </div>
     </section>
+</div>
 
+<!--Download-now section. Applications-->
+<section class="download-now">
+    <h2>Free downloads app now!</h2>
 
-    <section class="download-now">
-        <div class="download-container">
-            <h2>Free downloads app now!</h2>
+    <div class="links-wrapper">
+            <a href="#" class="google-play"><img src="img/google-play.png" alt="Google-play"/></a>
+            <a href="#" class="app-gallery"><img src="img/app-gallery.png" alt="App-gallery"/></a>
+            <a href="#" class="app-store"><img src="img/app-store.png" alt="App-store"/></a>
+    </div>
 
-            <div class="links-wrapper">
-                <a href="#" class="google-play"><img src="img/google-play.png" alt="Google-play"/></a>
-                <a href="#" class="app-gallery"><img src="img/app-gallery.png" alt="App-gallery"/></a>
-                <a href="#" class="app-store"><img src="img/app-store.png" alt="App-store"/></a>
-            </div>
+    <div class="links-wrapper1">
+        <div class="row1">
+            <a href="#" class="google-play"><img src="img/google-play.png" alt="Google-play"/></a>
         </div>
-    </section>
+        <div class="row2">
+            <a href="#" class="app-gallery"><img src="img/app-gallery.png" alt="App-gallery"/></a>
+            <a href="#" class="app-store"><img src="img/app-store.png" alt="App-store"/></a>
+        </div>
+    </div>
+</section>
 
+<!--FAQs section -->
     <section class="FAQs">
         <div class="container">
             <h2>FAQs.</h2>
-<!--            <div class="line-separator"></div>-->
+            <!-- Idea of line-separator, that it should be located between "faq-content", but not before 1st, and not after last-->
+            <!--<div class="line-separator"></div>-->
+
+            <!--Content wit questions and answers, in separate document: scripts > faq.js -->
             <div id="faq-content" class="faq-content"></div>
-
-
         </div>
     </section>
 
+    <!-- Contact section -->
     <section class="contact">
         <div class="contact-wrapper">
             <div class="contact-card">
@@ -230,15 +265,18 @@
             </div>
         </div>
     </section>
-
+    <!--Footer section-->
     <section class="footer">
         <div class="footer-wrapper">
             <div class="footer__container">
-                <div class = "footer__container logo-and-logo-text">
+                <div class = "footer__container-logo-and-brand">
                     <div class="footer__logo"><img src="img/footerLogo.png" alt="logo-image" /></div>
                     <div><p class="footer__brand">Wonders</p></div>
                 </div>
+
                 <div class="footer-links">
+
+                    <!--About-->
                     <div class="about-links">
                         <h3>About</h3>
                         <nav>
@@ -250,6 +288,8 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <!-- Community -->
                     <div class="community-links">
                         <h3>Community</h3>
                         <nav>
@@ -261,6 +301,8 @@
                             </ul>
                         </nav>
                     </div>
+
+                    <!-- Socials -->
                     <div class="socials-links">
                         <h3>Socials</h3>
                         <nav>
@@ -273,15 +315,18 @@
                         </nav>
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <h3>English: © 2025 Peak Passages.<br> All Rights Reserved (Especially the Window Seats).</h3>
-                </div>
+            </div>
+            <!-- Footer copyright text -->
+            <div class="footer-copyright">
+                <h3>English: © 2025 Peak Passages. All Rights Reserved (Especially the Window Seats).</h3>
             </div>
         </div>
     </section>
 
+<!-- Linked java code-->
 <script src="scripts/burger.js"></script>
 <script src="scripts/faq.js"></script>
 <!--<script src="script/form.js"></script>-->
+
 </body>
 </html>

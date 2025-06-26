@@ -4,7 +4,10 @@
 .gallery h2 {
     font-size: 32px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
+    .gallery h2 {
+        font-size: 64px;
+    }
     .gallery__elem_1 {
         grid-area: 1/1/2/3;
     }
@@ -21,7 +24,7 @@
         grid-area: 4/1/5/3;
     }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     .gallery__elem_1 {
         grid-area: 1/1/3/2;
     }

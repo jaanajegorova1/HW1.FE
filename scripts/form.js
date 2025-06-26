@@ -65,39 +65,41 @@ const Stations = [
     "Kranjska Gora Avtobusna Postaja"
 ];
 
-function setupAutocomplete(inputId, listId) {
-    const input = document.getElementById(inputId);
-    const list = document.getElementById(listId);
-
-    input.addEventListener("input", () => {
-        const value = input.value.toLowerCase();
-        list.innerHTML = "";
-
-        if (!value) return;
-
-        const filtered = Stations.filter(station =>
-            station.toLowerCase().includes(value)
-        );
-
-        filtered.forEach(station => {
-            const option = document.createElement("div");
-            option.textContent = station;
-            option.addEventListener("click", () => {
-                input.value = station;
-                list.innerHTML = "";
-            });
-            list.appendChild(option);
-        });
-    });
-
-    // Закрыть при клике вне поля
-    document.addEventListener("click", function (e) {
-        if (!input.contains(e.target) && !list.contains(e.target)) {
-            list.innerHTML = "";
-        }
-    });
-}
-
-// Инициализация
-setupAutocomplete("departure", "departure-list");
-setupAutocomplete("arrival", "arrival-list");
+//Comment: Code does not work! (plan for future > implement it)
+//
+// function setupAutocomplete(inputId, listId) {
+//     const input = document.getElementById(inputId);
+//     const list = document.getElementById(listId);
+//
+//     input.addEventListener("input", () => {
+//         const value = input.value.toLowerCase();
+//         list.innerHTML = "";
+//
+//         if (!value) return;
+//
+//         const filtered = Stations.filter(station =>
+//             station.toLowerCase().includes(value)
+//         );
+//
+//         filtered.forEach(station => {
+//             const option = document.createElement("div");
+//             option.textContent = station;
+//             option.addEventListener("click", () => {
+//                 input.value = station;
+//                 list.innerHTML = "";
+//             });
+//             list.appendChild(option);
+//         });
+//     });
+//
+//     // Закрыть при клике вне поля
+//     document.addEventListener("click", function (e) {
+//         if (!input.contains(e.target) && !list.contains(e.target)) {
+//             list.innerHTML = "";
+//         }
+//     });
+// }
+//
+// // Инициализация
+// setupAutocomplete("departure", "departure-list");
+// setupAutocomplete("arrival", "arrival-list");
