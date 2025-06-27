@@ -1,3 +1,4 @@
+/*mobile*/
 .download-now {
     padding: 32px 0;
     background-color: #FFC501;
@@ -28,7 +29,8 @@
     height: 50px;
 }/*# sourceMappingURL=download-now.css.map */
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+/*tablet*/
+@media screen and (min-width: 576px) and (max-width: 992px){
     .download-now {
         padding: 128px 121px;
     }
@@ -81,6 +83,7 @@
     }
 }
 
+/*desktop*/
 @media screen and (min-width: 993px) {
     .download-now {
         padding: 130px 287px 114px 288px;

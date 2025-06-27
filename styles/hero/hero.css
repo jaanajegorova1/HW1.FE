@@ -1,3 +1,4 @@
+/*mobile*/
 .hero {
     padding-bottom: 128px;
 }
@@ -22,6 +23,7 @@
     display: none;
 }
 
+/*tablet*/
 @media screen and (min-width: 576px) {
     .hero h1 {
         font-size: 64px;
@@ -41,6 +43,8 @@
         display: none;
     }
 }/*# sourceMappingURL=hero.css.map */
+
+/*desktop*/
 @media screen and (min-width: 993px) {
     .hero h1 {
         font-size: 64px;

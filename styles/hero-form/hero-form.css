@@ -1,3 +1,4 @@
+/*mobile*/
 .hero-form {
     max-width: 320px;
 }
@@ -103,7 +104,9 @@
 /*.hero-form .autocomplete-list div:hover {*/
 /*    background-color: #eee;*/
 /*}*/
-@media screen and (min-width: 768px) {
+
+/*tablet*/
+@media screen and (min-width: 576px) {
     .hero-form {
         max-width: 640px;
     }
@@ -121,6 +124,8 @@
         top: 33.5px;
     }
 }
+
+/*desktop*/
 @media screen and (min-width: 993px){
     .hero .hero-form {
         max-width: 640px;
