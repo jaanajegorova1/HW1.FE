@@ -66,10 +66,10 @@
     .links-wrapper1 .app-gallery a img {
         width: 217px;
         margin-bottom: 0;
+        margin-left: 153px;
     }
     .links-wrapper1 .app-store a img {
         width: 195px;
-        margin-left: 49px;
     }
     .row1 {
         display: flex;
@@ -83,10 +83,12 @@
         display: flex;
         /*display: inline-block;*/
         justify-content: space-between;
+        width: 462px;
         column-gap: 49px;
         text-align: center;
         vertical-align: inherit;
         cursor: pointer;
+        padding-left: 32px;
         /*text-decoration: none;*/
     }
 }
