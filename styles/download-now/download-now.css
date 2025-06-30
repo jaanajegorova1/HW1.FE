@@ -80,6 +80,8 @@
         display: flex;
         justify-content: space-between;
         column-gap: 49px;
+        text-align: center;
+        vertical-align: inherit;
     }
 }
 
