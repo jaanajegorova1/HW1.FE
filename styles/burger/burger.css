@@ -5,6 +5,7 @@
     top: 99px;
     width: 100%;
     transition: left 0.5s ease-in;
+    z-index: 99; /* Add a z-index to ensure the burger is on top */
 }
 .burger__closed {
     left: -100%;
@@ -29,3 +30,21 @@
     color: #fff;
     text-decoration: none;
 }/*# sourceMappingURL=burger.css.map */
+/* NEW: Hide specific elements when menu is open */
+body.menu-open .calendar-input-wrapper::before,
+body.menu-open .calendar-input-wrapper {
+    visibility: hidden; /* Use visibility: hidden; to maintain layout space if needed, or display: none; to collapse */
+    /* Alternatively, if you want to completely remove it from flow: */
+    /* display: none; */
+}
+
+/* Consider hiding the entire hero-form if it's not meant to be interacted with */
+body.menu-open .hero-form {
+    pointer-events: none; /* Disables interaction */
+    opacity: 0; /* Visually hides it */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+/* Ensure the burger menu has a higher z-index than elements it should cover */
+.burger {
+    z-index: 1000; /* Make sure this is higher than anything else that might be showing through */
+}
