@@ -65,23 +65,29 @@
     }
     .links-wrapper1 .app-gallery a img {
         width: 217px;
-        /*margin-left: 30px;*/
         margin-bottom: 0;
     }
     .links-wrapper1 .app-store a img {
         width: 195px;
+        margin-left: 49px;
     }
     .row1 {
         display: flex;
         justify-content: center;
         margin-top: 0;
+        text-align: center;
+        /*text-decoration: none;*/
+
     }
     .row2 {
         display: flex;
+        /*display: inline-block;*/
         justify-content: space-between;
         column-gap: 49px;
         text-align: center;
         vertical-align: inherit;
+        cursor: pointer;
+        /*text-decoration: none;*/
     }
 }
 
