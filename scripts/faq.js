@@ -86,5 +86,12 @@ ARRAY_OF_ELEMENTS.forEach((item, index, array) => {
     const faqElement = generateFAQElement(item.title, item.content);
     faqContent.appendChild(faqElement);
 
+    // Add a line separator after each item except the last one
+    if (index < array.length - 1) {
+        const lineSeparator = document.createElement("div");
+        lineSeparator.classList.add("line-separator");
+        faqContent.appendChild(lineSeparator);
+    }
+
     if (index === array.length - 1) initClickListeners();
 });

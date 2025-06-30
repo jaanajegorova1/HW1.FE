@@ -39,7 +39,7 @@
     transform: rotate(45deg);
 }/*# sourceMappingURL=faq.css.map */
 
-/*.FAQs .line-separator {*/
-/*        width: 100%;*/
-/*        border-top: 1px solid lightgray;*/
-/*}*/
+.FAQs .line-separator {
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
